@@ -4,332 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PHARVET SARL - Pharmacie Vétérinaire à Meiganga. Médicaments, conseils et équipements pour l'élevage.">
+
     <title>PHARVET SARL | Pharmacie Vétérinaire Meiganga</title>
+
+    <!-- CSS LOCAL -->
     <link rel="stylesheet" href="pharvet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Leaflet CSS -->
+
+    <!-- FONT AWESOME (UNE SEULE FOIS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- LEAFLET CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <!-- SEO STRUCTURED DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "VeterinaryCare",
       "name": "PHARVET SARL",
-      "image": "logo.png",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Centre-ville",
         "addressLocality": "Meiganga",
         "addressRegion": "Adamaoua",
         "addressCountry": "CM"
-      },
-      "telephone": "+237 000 000 000",
-      "openingHours": "Mo-Sa 08:00-18:00"
+      }
     }
     </script>
 </head>
+
 <body>
 
-                <header class="main-header">
-            <div class="container nav-container">
+<header class="main-header">
+    <div class="container nav-container">
 
-                <!-- LOGO -->
-                <div class="logo">
-                <i class="fa-solid fa-staff-snake"></i>
-                PHARVET <span>SARL</span>
-                </div>
+        <div class="logo">
+            <i class="fa-solid fa-staff-snake"></i>
+            PHARVET <span>SARL</span>
+        </div>
 
-                <!-- MENU -->
-                <nav>
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="index.html" class="active">ACCUEIL</a></li>
-                    <li><a href="#produits">PRODUITS</a></li>
-                    <li><a href="produits.html">SERVICES</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-                </nav>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">ACCUEIL</a></li>
+                <li><a href="#presentation">PRÉSENTATION</a></li>
+                <li><a href="produits.html">PRODUITS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
 
-                <!-- HAMBURGER -->
-                <div class="hamburger" id="hamburger">
-                <i class="fa-solid fa-bars"></i>
-                </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-            </div>
-            </header>
+    </div>
+</header>
 
-      <h2 class="plaque">
-    <img src="images/plaque.png" alt="Plaque">
-
+<h2 class="plaque">
+    <img src="images/plaque.png" alt="PHARVET SARL">
     <span class="typing-container">
         <span id="typing"></span><span class="cursor">|</span>
     </span>
 </h2>
 
-   
+<section class="section presentation" id="presentation">
+    <div class="container">
+        <h2 class="section-title">QUI SOMMES-NOUS ?</h2>
 
-    <section class="section presentation" id="presentation">
-        <div class="container">
-            <h2 class="section-title">QUI SOMMES NOUS ?</h2>
-                            <div class="grid-2">
-                                <div class="text-block">
-                    <h3>Notre Mission</h3>
-                    <p>
-                     <strong>PHARVET SARL</strong> est un cabinet vétérinaire situé dans la ville de Meiganga,region de l'adamaoua, engagé
-                        dans la <strong>vente en gros et en détail de produits vétérinaires</strong>,
-                        destinés aux professionnels et aux éleveurs. Nous œuvrons chaque jour à améliorer
-                        la santé animale et la productivité des élevages dans la région de l’Adamaoua.
-                    </p>
-                    <p>
-                        En plus de la fourniture de médicaments et d’intrants vétérinaires certifiés,
-                        PHARVET SARL accompagne les porteurs de projets et les exploitants dans la
-                        <strong>mise en place, le suivi et le développement de projets d’élevage</strong>,
-                        notamment bovins, ovins, caprins et avicoles.
-                    </p>
-                    <ul class="values-list">
-                        <li><i class="fas fa-check-circle"></i> Produits vétérinaires certifiés et contrôlés</li>
-                        <li><i class="fas fa-check-circle"></i> Vente en gros et en détail</li>
-                        <li><i class="fas fa-check-circle"></i> Accompagnement des projets d’élevage</li>
-                       </ul>
-                </div>
-
-                                <!-- ================= SLIDER ================= -->
-            <section class="animal-slider py-5">
-            <div class="container">
-                <div class="slider-box">
-                <img src="images/hd.jpg" class="slider-img active">
-                <img src="images/boeuf.jpg" class="slider-img"> 
-                <img src="images/mouton.jpg" class="slider-img">
-                
-                <img src="images/chevre1.jpg" class="slider-img"> 
-                
-                <img src="images/poule1.jpg" class="slider-img">
-               
-                <img src="images/chat.webp" class="slider-img">
-                
-                </div>
-                <p class="text-center mt-3 fw-semibold">
-                Des animaux bien nourris, en bonne santé
+        <div class="grid-2">
+            <div class="text-block">
+                <h3>Notre mission</h3>
+                <p>
+                    <strong>PHARVET SARL</strong> est une pharmacie vétérinaire basée à Meiganga,
+                    spécialisée dans la vente de produits vétérinaires certifiés et
+                    l’accompagnement des projets d’élevage.
                 </p>
-            </div>
-            </section>
-            </div>
-            
-        </div>
-        
-    </section>
 
-    <section class="section team" id="equipe">
-        <div class="container">
-            <h2 class="section-title">NOS PRODUITS PHARES</h2>
-            <div class="team-grid">
-                
-                <div class="team-card">
-                  <div class="produit_img">
-                     <img src="images/oxytop.jpg" alt="Oxytop">
-                    <h3>OXYTOP</h3>
-                    <p class="role">Oxytetracycline</p>
-                  </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/oxyvet.jpg" alt="Conseiller">
-                    <h3>OXYVET 5%</h3>
-                    <p class="role">Oxytetracycline</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                      <img src="images/oxymed.jpg" alt="Conseiller">
-                    <h3>OXYMED</h3>
-                    <p class="role">Oxytetracycline</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/oxyplus.jpg" alt="Conseiller">
-                    <h3>OXYPLUS</h3>
-                    <p class="role">Oxytetracycline</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                   <div class="produit_img">
-                     <img src="images/tetranor.jpg" alt="Conseiller">
-                    <h3>TETRANOR</h3>
-                    <p class="role">Oxytetracycline</p>
-                   </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                      <img src="images/ivermectin.jpg" alt="Conseiller">
-                    <h3>IVERMECTIN</h3>
-                    <p class="role">Iverctin</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/iverla.jpg" alt="Conseiller">
-                    <h3>IVERLA</h3>
-                    <p class="role">Ivermectin</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                   <div class="produit_img">
-                      <img src="images/ivermec_plus.jpg" alt="Conseiller">
-                    <h3>IVERMECTIN PLUS</h3>
-                    <p class="role">Ivermectin</p>
-                   </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                         <img src="images/ivanor.jpg" alt="Conseiller">
-                    <h3>IVANOR</h3>
-                    <p class="role">Ivermectin</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                        <img src="images/tylosin.jpg" alt="Conseiller">
-                        <h3>TYLOSIN</h3>
-                        <p class="role">Tylosin</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                        <img src="images/tylosulfa.jpg" alt="Conseiller">
-                        <h3>TYLOSULFA</h3>
-                        <p class="role">Tylosulfa</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/floxionor.jpg" alt="Conseiller">
-                    <h3>FLOXINOR</h3>
-                    <p class="role">Oxytetracycline</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                  <div class="produit_img">
-                       <img src="images/gamcivet.jpg" alt="Conseiller">
-                    <h3>GAMCINVET</h3>
-                    <p class="role">gamcivet</p>
-                  </div>
-                </div>
-                 <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/multivet.jpg" alt="Conseiller">
-                    <h3>MULTIVET</h3>
-                    <p class="role">Vitamines</p>
-                    </div>
-                    
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/antistress_plus.jpg" alt="Conseiller">
-                    <h3>ANTI STRESS</h3>
-                    <p class="role"></p>
-                    </div>
-                    
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/vit.jpg" alt="Conseiller">
-                    <h3>ALBENVET</h3>
-                    <p class="role">deparasitant</p>
-                    </div>
-                    
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/neomycin.jpg" alt="Conseiller">
-                    <h3>NEOMYCIN</h3>
-                    <p class="role"></p>
-                    </div>
-                    
-                </div>
-                
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/oxycol_super.jpg" alt="Conseiller">
-                    <h3>OXYCOL SUPER</h3>
-                    <p class="role"></p>
-                    </div>
-                    
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/nobazene.jpg" alt="Conseiller">
-                    <h3>NOBAZENE</h3>
-                    <p class="role"></p>
-                    </div>
-                    
-                </div>
-                <div class="team-card">
-                    <div class="produit_img">
-                       <img src="images/dimivet.jpg" alt="Conseiller">
-                    <h3>DIMIVET</h3>
-                    <p class="role"></p>
-                    </div>
-                    
-                </div>
+                <ul class="values-list">
+                    <li><i class="fas fa-check-circle"></i> Produits certifiés</li>
+                    <li><i class="fas fa-check-circle"></i> Vente en gros et détail</li>
+                    <li><i class="fas fa-check-circle"></i> Suivi des élevages</li>
+                </ul>
+            </div>
+
+            <div class="slider-box">
+                <img src="images/hd.jpg" class="slider-img active">
+                <img src="images/boeuf.jpg" class="slider-img">
+                <img src="images/mouton.jpg" class="slider-img">
+                <img src="images/poule1.jpg" class="slider-img">
             </div>
         </div>
-    </section>
 
-    <section class="section contact-section" id="contact">
-        <div class="container">
-            <h2 class="section-title">NOS COORDONNEES</h2>
-            <div class="contact-grid">
-                <div class="info-card">
-                    <h3>Coordonnées</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> face du lamidat (Mosque centrale de Meiganga), Meiganga, Cameroun</p>
-                    <p><i class="fas fa-phone"></i> +237 658393939</p>
-                    <p><i class="fas fa-envelope"></i> contact@pharvet-sarl.cm</p>
-                    
-                    <h3 style="margin-top: 20px;">Horaires</h3>
-                    <p>Lundi - Vendredi : 08h00 - 20h00</p>
-                    <p>Samedi : 08h00 - 15h00</p>
-                    <p>Dimanche : 8h00 - 15h00</p>
-                </div>
-              
+    </div>
+</section>
 
-   
+<section class="section team">
+    <div class="container">
+        <h2 class="section-title">PRODUITS PHARES</h2>
 
-   
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <div class="team-grid">
+            <div class="team-card">
+                <img src="images/oxytop.jpg" alt="Oxytop">
+                <h3>OXYTOP</h3>
+                <p>Oxytétracycline</p>
+            </div>
 
-    <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+            <div class="team-card">
+                <img src="images/ivermectin.jpg" alt="Ivermectin">
+                <h3>IVERMECTIN</h3>
+                <p>Antiparasitaire</p>
+            </div>
 
-
-
-
-<div class="map-container">
-    <div class="map-frame">
-    <img id="mapImage" alt="Localisation Pharvet SARL">
-</div>
-
-</div>
-
-
-    </section>
-
-    <footer>
-        <div class="container footer-content">
-            <p>&copy; 2025 PHARVET SARL. Tous droits réservés.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-telegram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+            <div class="team-card">
+                <img src="images/multivet.jpg" alt="Multivet">
+                <h3>MULTIVET</h3>
+                <p>Vitamines</p>
             </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="pharvet.js"></script>
-    <!-- Leaflet JS -->
+<section class="section contact-section" id="contact">
+    <div class="container">
+        <h2 class="section-title">CONTACT</h2>
+
+        <div class="contact-grid">
+
+            <div class="info-card">
+                <p><i class="fas fa-map-marker-alt"></i> Mosquée centrale, Meiganga</p>
+                <p><i class="fas fa-phone"></i> +237 658 39 39 39</p>
+                <p><i class="fas fa-envelope"></i> contact@pharvet-sarl.cm</p>
+            </div>
+
+            <div class="map-container">
+                <img src="images/map.jpg" alt="Localisation PHARVET SARL">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <p>&copy; 2025 PHARVET SARL</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="pharvet.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 </body>
